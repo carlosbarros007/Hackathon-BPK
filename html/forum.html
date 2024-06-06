@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Fórum</title>
+    <link rel="stylesheet" href="../css/forum.css">
+</head>
+<body>
+    <section class="boxForum">
+
+        <!-- Post Amanda -->
+        <section class="post">
+            <div class="user">
+                <img src="../img/userIMG.webp" alt="">
+                <h2>Amanda Santana</h2>
+            </div>
+            <div class="content">
+                <h2>Gostei do conteúdo</h2>
+                <div class="contentText">
+                    <p>
+                        O site de cursos é uma fonte incrível de aprendizado, repleto de conteúdo valioso que enriquece minha jornada educacional!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Post Anderson -->
+        <section class="post">
+            <div class="user">
+                <img src="../img/userIMG.webp" alt="">
+                <h2>Anderson Silva Pereira</h2>
+            </div>
+            <div class="content">
+                <h2>Estou adorando esses cursos!!</h2>
+                <div class="contentText">
+                    <p>
+                        O site de cursos oferece uma ampla gama de conteúdos, facilitando o aprendizado e o aprimoramento contínuo. É uma verdadeira fonte de conhecimento acessível e inspiradora!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Criação de Post -->
+        <section class="post">
+            <div class="user">
+                <img src="../img/userIMG.webp" alt="">
+                <h2>Seja bem-vindo ao fórum</h2>
+            </div>
+            <div class="content">
+                <h2>Deixe sua mensagem!</h2>
+                <form id="new-post-form">
+                    <input type="text" id="user-name" placeholder="Seu nome" required maxlength="50">
+                    <input type="text" id="post-title" placeholder="Título da postagem" required maxlength="100">
+                    <input type="textarea" id="post-content" placeholder="Informe o conteudo" maxlength="200">
+                    <p><span id="char-count">0</span>/200 caracteres</p>
+                    <button type="submit">Publicar</button>
+                </form>
+            </div>
+        </section>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
