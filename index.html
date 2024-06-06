@@ -175,6 +175,37 @@
 
         </section>
 
+        <p style="font-size: 18px; text-transform: capitalize; ">Parceria de peso</p>
+        <section class="section-parcerias">
+         
+
+            <div class="section-parcerias-parceira">
+                <h3>Bio Academy e Biopark educao</h3>
+                <p >
+                    Uma parceria de peso focada no seu desenvolvimeto proficional e pessoal oferecendo cursos de graduacao e posgraduacao
+                </p>
+
+               <div style="width: 90%; text-align: end;"> <button class="button">Saiba mais</button></div>
+            </div>
+
+            <div>
+
+                <div class="swiper mySwiper" style="width: 100%; height: 100%; border-radius: 20px;">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="https://placehold.co/600x400" alt=""></div>
+                      <div class="swiper-slide"><img src="https://placehold.co/600x400" alt=""></div>
+                      <div class="swiper-slide"><img src="https://placehold.co/600x400" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div  class="swiper-pagination"></div>
+                </div>
+                
+
+
+            </div>
+        </section>
+
         <section class="section-marketing"></section>
     </main>
 
@@ -183,6 +214,23 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
