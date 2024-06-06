@@ -1,0 +1,298 @@
+body{
+    height: 100vh;
+}
+
+.nav-bar-head{
+    width: 100%;
+    padding: 30px 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-head ul:last-of-type{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-apresentacao{
+    width: 100%;
+    height: 400PX;
+    display: flex;
+    align-items: center;
+}
+
+.section-apresentacao-texto{
+    width: 50%;
+    padding-left: 60px;
+}
+
+.section-apresentacao-texto h1{
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.section-apresentacao-texto h2{
+    font-size: 18px;
+}
+
+
+
+/* cards precos */
+
+.section-planos-titulo{
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.cads-planos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+figure {
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  figure > * {
+    grid-area: 1/1;
+    transition: .4s;
+  }
+  figure figcaption {
+    display: grid;
+    align-items: end;
+    font-family: sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #0000;
+    padding: .75rem;
+    background: var(--c,#0009);
+    clip-path: inset(0 var(--_i,100%) 0 0);
+    -webkit-mask:
+      linear-gradient(#000 0 0),
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    margin: -1px;
+  }
+  figure:hover figcaption{
+    --_i: 0%;
+  }
+  figure:hover img {
+    transform: scale(1.2);
+  }
+  @supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+     -webkit-mask: none;
+     color: #fff;
+    }
+  }
+
+
+  .section-cursos{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .section-cursos h3{
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .cursos 
+  {
+    margin-bottom: 30px;
+  }
+
+
+  .section-aulas-ao-vivo{
+    width: 95%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+   
+  }
+
+  .section-aulas-ao-vivo-img{
+    width: 55%;
+  }
+
+  .section-aulas-ao-vivo-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .section-aulas-ao-vivo-texto{
+    width: 45%;
+    padding-top: 30px;
+
+   
+  }
+
+  .section-aulas-ao-vivo-texto div{
+    width: 100%;
+    text-align: end;
+  }
+
+  .section-aulas-ao-vivo-texto p:first-child{
+    font-size: 45px;
+    font-weight: bold;
+    padding-left:40px ;
+  }
+  
+  .section-aulas-ao-vivo-texto p:last-of-type{
+    padding-left:40px ;
+    font-size: 20px;
+  }
+
+
+
+  .button {
+
+    background-color: #28a745; /* Verde vibrante */
+    color: white; /* Texto branco */
+    padding: 15px 25px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+.button:hover {
+    background-color: #218838; /* Cor de fundo ao passar o mouse */
+}
+
+.button:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+    box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5); /* Sombra de foco */
+}
+
+.section-cusos-interativos {
+  width: 95%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.section-cusos-interativos-texto {
+  flex: 1;
+  margin-right: 40px;
+    
+}
+
+.section-cusos-interativos-texto h3 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-cusos-interativos-texto p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.section-cusos-interativos-cards {
+  position: relative;
+  flex: 1;
+}
+
+.card {
+  width: 400px;
+  height: 240px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-1 {
+  top: 0;
+  right: 180px;
+}
+
+.card-2 {
+  top: 210px; /* 200px height - 15px overlap */
+  right: 0;
+}
+
+
+.container-interativo{
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.section-parcerias{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.section-parcerias-parceira{
+  width: 50%;
+  padding-bottom: 100px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: ceter;
+  justify-content: center;
+
+}
+
+
+.section-parcerias h3{
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-parcerias p{
+  font-size: 20px;
+}
+
+.section-parcerias div:last-of-type{
+  width: 50%;
+  
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

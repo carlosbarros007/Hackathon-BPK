@@ -1,0 +1,92 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+.swiper {
+    width: 100%;
+    height: auto;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .mySwiperCursos{
+    height: 200px;
+    margin-top: 10px;
+  }
+  
+  .slide-curso{
+    height: 200px;
+    width: 300px;
+  }
+
+  .video-card {
+    overflow: hidden;
+    padding-bottom: 75%;
+  }
+  @media(min-width: 768px) {
+    .video-card {
+     padding-bottom:50%;
+    height: 100%;    
+}
+  }
+  .video-card .hover {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background: rgba(0,0,0,0.75);
+    transition: opacity 0.4s;
+  }
+  .video-card:hover .hover {
+    opacity: 1;
+  }
+  
+  .video-card .video-title {
+    opacity: 1;
+    background: rgba(0,0,0,0.5); 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    cursor: pointer;
+    transition: opacity 0.4s;
+  }
+  .video-card:hover .video-title {
+    opacity: 0;
+  }
+
+  .underline-hover:hover {
+    text-decoration: underline;
+    
+}

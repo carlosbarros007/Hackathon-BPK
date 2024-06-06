@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* Cores */
+:root {
+  --background: #141414;
+  --modal: #181818;
+  --white: #ffffff;
+}
+
+/* Reset */
+
+
+/* Modal */
+#nm-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  min-height: 100vh;
+  
+  
+}
+
+#nm-wrapper > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  cursor: pointer;
+  max-height: 42px;
+  min-height: 32px;
+  font-size: 1.6rem;
+  appearance: none;
+  border: 0;
+  border-radius: 4px;
+  padding-left: 2rem;
+  padding-right: 2.4rem;
+  background-color: var(--white);
+  color: var(--background);
+  font-weight: 700;
+  line-height: 2.4rem;
+  position: absolute;
+  z-index: 1;
+}
+
+#nm-wrapper > button svg {
+  margin-right: 10px;
+}
+
+.nm-modal {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: 20px 20px;
+  border-radius: 6px;
+  z-index: 2;
+  background-color: var(--modal);
+  box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
+  transition: opacity 0.2s linear;
+  position:absolute;
+  top: 10%;
+  height: auto;
+  animation: fadeIn 0.8s;
+}
+
+.nm-modal .nm-modal-header {
+  position: relative;
+  
+}
+
+.nm-modal .nm-modal-header::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(0deg, var(--modal), transparent 50%);
+  
+}
+
+.nm-modal .nm-modal-header video {
+  border-radius: 6px 6px 0 0;
+  display: block;
+  width: 100%;
+  opacity: 1;
+}
+
+.nm-modal .nm-modal-header .nm-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  z-index: 2;
+  cursor: pointer;
+  background-color: var(--modal);
+  color: var(--white);
+  border-radius: 50%;
+  height: 36px;
+  padding: 8px;
+  width: 36px;
+  border: 0;
+  
+}
+
+.nm-modal .nm-modal-header .nm-close svg {
+  outline: none;
+}
+
+.nm-modal .nm-modal-header .nm-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 52px;
+  margin-bottom: 70px;
+  z-index: 2;
+}
+
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title {
+  width: 100%;
+}
+
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title > img {
+  width: 40%;
+  margin-bottom: 1.5em;
+}
+
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  cursor: pointer;
+  max-height: 42px;
+  min-height: 32px;
+  font-size: 1.6rem;
+}
+
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-play,
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-add {
+  margin-right: 10px;
+}
+
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-play {
+  appearance: none;
+  border: 0;
+  border-radius: 4px;
+  padding-left: 2rem;
+  padding-right: 2.4rem;
+  background-color: var(--white);
+  color: var(--background);
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-play svg {
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-volume,
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-add,
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-rate {
+  max-width: 42px;
+  min-width: 32px;
+  background-color: rgba(42, 42, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-width: 2px;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  color: var(--white);
+  border-radius: 50%;
+}
+
+.nm-modal
+  .nm-modal-header
+  .nm-header-content
+  .nm-header-title
+  .nm-header-buttons
+  .nm-volume:hover,
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-add:hover,
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-rate:hover {
+  border-color: var(--white);
+  background-color: rgba(42, 42, 42, 1);
+}
+
+.nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-volume {
+  position: absolute;
+  right: 0;
+  opacity: 0.4;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.nm-modal
+  .nm-modal-header
+  .nm-header-content
+  .nm-header-title
+  .nm-header-buttons
+  .nm-volume:hover {
+  opacity: 1;
+}
+
+.nm-modal .nm-modal-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10px;
+  padding: 15px 48px;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-first {
+  padding-right: 40px;
+  line-height: 25px;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-first .nm-modal-description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-first .nm-modal-description span,
+.nm-modal .nm-modal-body .nm-modal-content-first .nm-modal-description svg {
+  margin-right: 10px;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-first .nm-modal-description span:first-child {
+  color: #46d369;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-first .nm-modal-description span {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-first .nm-modal-description svg {
+  width: 30px;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-first .nm-modal-description .nm-description-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  border: 1px solid hsla(0, 0%, 100%, 0.4);
+  border-radius: 3px;
+  color: hsla(0, 0%, 100%, 0.9);
+  font-size: 1.2rem;
+  padding: 0 0.5em;
+  white-space: nowrap;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-first p {
+  font-size: 1.4rem;
+  line-height: 24px;
+  word-break: break-word;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-second {
+  word-break: break-word;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-second span {
+  line-height: 20px;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-second .nm-title {
+  color: #777;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-second .nm-cast,
+.nm-modal .nm-modal-body .nm-modal-content-second .nm-genres,
+.nm-modal .nm-modal-body .nm-modal-content-second .nm-show {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-second .nm-cast span:hover,
+.nm-modal .nm-modal-body .nm-modal-content-second .nm-genres span:hover,
+.nm-modal .nm-modal-body .nm-modal-content-second .nm-show span:hover {
+  text-decoration: underline;
+}
+
+.nm-modal .nm-modal-body .nm-modal-content-first,
+.nm-modal .nm-modal-body .nm-modal-content-second {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.nm-hidden {
+  display: none;
+}
+
+.nm-visuallyhidden {
+  opacity: 0;
+}
+
+@media screen and (min-width: 1080px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 768px) {
+  .nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-add,
+  .nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-rate,
+  .nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-volume {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nm-modal .nm-modal-header .nm-header-content {
+    margin-bottom: 40px;
+  }
+
+  .nm-modal .nm-modal-header .nm-header-content .nm-header-title .nm-header-buttons .nm-play {
+    height: 32px;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .nm-modal .nm-modal-body {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .nm-modal .nm-modal-body .nm-modal-content-second {
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
