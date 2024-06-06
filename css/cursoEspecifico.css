@@ -1,0 +1,95 @@
+body {
+    background-image: url(../img/fundo.png);
+    color: white;
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 100px;
+}
+
+.navbar {
+    background-color: #33333377; /* Cor de fundo da navbar */
+    padding: 0;
+    display: flex; /* Usando flexbox para alinhar os itens */
+    justify-content: space-between; /* Alinha os itens nos extremos */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.navbar img {
+    margin-left: 10px; /* Adiciona um pequeno espaço entre a imagem e a borda da navbar */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    font-family: "Bungee", sans-serif;
+    color: #fff; /* Cor do texto das abas */
+    text-decoration: none;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombreamento às fontes */
+}
+
+.navbar ul li a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse sobre as abas */
+}
+
+.containerVideo{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaço interno */
+}
+
+.container h2 {
+    text-align: left;
+    font-size: 3rem;
+    font-family: "Bungee", sans-serif;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombreamento às fontes */
+}
+
+h2 {
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+    font-style: normal;
+    margin: 0px;
+}
+
+.card {
+    font-family: "Nunito", sans-serif;  
+    width: 20%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    height: 15vh;
+    text-align: center;
+    display: inline-block;
+    color: black;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    color: bl;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Barras Empilhadas</title>
+    <link rel="stylesheet" href="../css/ranking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body class="body">
+
+    <h2>Ranking de usuários !</h2>
+
+    <canvas id="myChart"></canvas>
+
+    <style>
+        #myChart {
+            width: 80%; 
+            height: auto; 
+            margin: 0 auto; 
+            display: block; 
+        }
+    </style>
+
+    <script>
+
+        const labels = ['@Lucas Ribeiro', '@Thiago Silva', '@Mario', '@Robinho', '@Daniel alves', '@Chico Moedas', '@Neymar', '@Ronaldo', '@Messi', '@Mbappe'];
+        const data = [3980, 3471, 3444, 3000, 2730, 2500, 2878, 2400, 2250, 2120];
+        const sortedLabels = labels.slice().sort((a, b) => data[labels.indexOf(b)] - data[labels.indexOf(a)]);
+
+        const sortedData = sortedLabels.map(label => data[labels.indexOf(label)]);
+
+        const config = {
+            type: 'bar',
+            data: {
+                labels: sortedLabels,
+                datasets: [{
+                    axis: 'y',
+                    data: sortedData,
+                    fill: false,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.4)',
+                        'rgba(255, 159, 64, 0.4)',
+                        'rgba(255, 205, 86, 0.4)',
+                        'rgba(75, 192, 192, 0.4)',
+                        'rgba(54, 162, 235, 0.4)',
+                        'rgba(153, 102, 255, 0.4)',
+                        'rgba(201, 203, 207, 0.4)',
+                        'rgba(255, 99, 132, 0.4)',
+                        'rgba(255, 159, 64, 0.4)',
+                        'rgba(255, 205, 86, 0.4)'
+                    ],
+                    borderColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(255, 159, 64)',
+                        'rgb(255, 205, 86)',
+                        'rgb(75, 192, 192)',
+                        'rgb(54, 162, 235)',
+                        'rgb(153, 102, 255)',
+                        'rgb(201, 203, 207)',
+                        'rgb(255, 99, 132)',
+                        'rgb(255, 159, 64)',
+                        'rgb(255, 205, 86)'
+                    ],
+                    borderWidth: 4
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false 
+                    },
+                    tooltip: {
+                        enabled: true 
+                    }
+                }
+            }
+        };
+
+        var myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
+</body>
+</html>
