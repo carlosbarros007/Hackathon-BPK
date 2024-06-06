@@ -71,7 +71,82 @@
     </div>
 
     <div class="mt-5" style="width: 80%;margin:0 auto">
-
+        <div class="mt-5" style="margin-top:40px">
+            <h1 class="text-light">Cursos realizados</h1>
+        </div>
+        <div class="swiper mySwiperCursos">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-curso">
+                    <div class="video-card w-100 rounded shadow position-relative"
+                        style="background: url(/img/thumb.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="video-title position-absolute text-white p-2 p-xl-2 ">
+                            <p class="mb-0">Curso de programação</p>
+                            <p>virtualização</p>
+                        </div>
+                        <div class="hover text-white">
+                            <a style="text-decoration: none; color: white" href="#" class="nm-open" data-bs-toggle=""
+                                data-bs-target="">
+                                <i class="fas fa-play small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-curso">
+                    <div class="video-card w-100 rounded shadow position-relative"
+                        style="background: url(/img/Alimentos/AuditorLiderIMG1.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="video-title position-absolute text-white p-2 p-xl-2">
+                            <p>Curso</p>
+                        </div>
+                        <div class="hover text-white">
+                            <i class="fas fa-play small"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-curso">
+                    <div class="video-card w-100 rounded shadow position-relative"
+                        style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="video-title position-absolute text-white p-2 p-xl-2">
+                            <p>Curso</p>
+                        </div>
+                        <div class="hover text-white">
+                            <i class="fas fa-play small"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-curso">
+                    <div class="video-card w-100 rounded shadow position-relative"
+                        style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="video-title position-absolute text-white p-2 p-xl-2">
+                            <p>Curso</p>
+                        </div>
+                        <div class="hover text-white">
+                            <i class="fas fa-play small"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-curso">
+                    <div class="video-card w-100 rounded shadow position-relative"
+                        style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="video-title position-absolute text-white p-2 p-xl-2">
+                            <p>Curso</p>
+                        </div>
+                        <div class="hover text-white">
+                            <i class="fas fa-play small"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-curso">
+                    <div class="video-card w-100 rounded shadow position-relative"
+                        style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="video-title position-absolute text-white p-2 p-xl-2">
+                            <p>Curso</p>
+                        </div>
+                        <div class="hover text-white">
+                            <i class="fas fa-play small"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     
     
@@ -109,6 +184,22 @@
   
           var chart = new ApexCharts(document.querySelector("#chart"), options);
           chart.render();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiperCursos", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 
 </body>
