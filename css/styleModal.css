@@ -7,6 +7,14 @@
   --white: #ffffff;
 }
 
+.overlay {
+  display: none;
+  width: 100%;
+  height: 1200px;
+  background-color: rgba(0, 0, 0, 0.321);
+  z-index: 5;
+  position: absolute;
+}
 /* Reset */
 
 
@@ -40,7 +48,7 @@
   font-weight: 700;
   line-height: 2.4rem;
   position: absolute;
-  z-index: 1;
+  z-index: 7;
 }
 
 #nm-wrapper > button svg {
@@ -53,7 +61,7 @@
   width: 1000px;
   margin: 20px 20px;
   border-radius: 6px;
-  z-index: 2;
+  z-index: 6;
   background-color: var(--modal);
   box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
   transition: opacity 0.2s linear;
@@ -357,3 +365,120 @@
     from { opacity: 1; }
     to { opacity: 0; }
   }
+
+
+
+
+
+
+  /* Modal */
+#nm-wrapperq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  min-height: 100vh;
+  
+  
+}
+
+#nm-wrapperq > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  cursor: pointer;
+  max-height: 42px;
+  min-height: 32px;
+  font-size: 1.6rem;
+  appearance: none;
+  border: 0;
+  border-radius: 4px;
+  padding-left: 2rem;
+  padding-right: 2.4rem;
+  background-color: var(--white);
+  color: var(--background);
+  font-weight: 700;
+  line-height: 2.4rem;
+  position: absolute;
+  z-index: 1;
+}
+
+#nm-wrapperq > button svg {
+  margin-right: 10px;
+}
+
+.nm-modalq {
+  display: none;
+  flex-direction: column;
+  width: 1000px;
+  margin: 20px 20px;
+  border-radius: 6px;
+  z-index: 10;
+  background-color: var(--modal);
+  box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
+  transition: opacity 0.2s linear;
+  position:absolute;
+  top: 30%;
+  height: auto;
+  animation: fadeIn 0.8s;
+}
+
+.nm-modalq .nm-modal-headerq {
+  position: relative;
+  
+}
+
+.nm-modalq .nm-modal-headerq::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(0deg, var(--modal), transparent 50%);
+  
+}
+
+.nm-modalq .nm-modal-headerq video {
+  border-radius: 6px 6px 0 0;
+  display: block;
+  width: 100%;
+  opacity: 1;
+}
+
+.nm-modalq .nm-modal-headerq .nm-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  z-index: 2;
+  cursor: pointer;
+  background-color: var(--modal);
+  color: var(--white);
+  border-radius: 50%;
+  height: 36px;
+  padding: 8px;
+  width: 36px;
+  border: 0;
+  
+}
+
+.nm-modalq .nm-modal-headerq .nm-closeq svg {
+  outline: none;
+}
+
+.nm-modalq .nm-modal-headerq .nm-header-contentq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 52px;
+  margin-bottom: 70px;
+  z-index: 2;
+}
