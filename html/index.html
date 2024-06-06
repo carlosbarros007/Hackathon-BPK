@@ -677,18 +677,18 @@
                                             <p>Quiz 1</p>
                                         </div>
                                         <div class="hover text-white" onclick="openButtonq()" >
-                                            <i class="nm-close fas fa-gamepad small" ></i>
+                                            <div id="chart"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide slide-curso">
-                                    <div class="video-card w-100 shadow position-relative"
+                                <div class="swiper-slide slide-curso ">
+                                    <div class="  video-card w-100 shadow position-relative" 
                                         style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
                                         <div class="video-title position-absolute text-white p-2 p-xl-2">
-                                            <p>Quiz 1</p>
+                                            <p>Quiz 2</p>
                                         </div>
-                                        <div class="hover text-white">
-                                            <i class="fas fa-lock small"></i>
+                                        <div class="hover text-white" onclick="openButtonq()" >
+                                            <i class="nm-close fas fa-gamepad small" ></i>
                                         </div>
                                     </div>
                                 </div>
@@ -845,6 +845,22 @@
                                 prevEl: ".swiper-button-pre",
                             }
                         });
+                    </script>
+                    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+                    <script>
+                        var options = {
+                            series: [80,20],
+                            colors:["#008000","#FF0000"],
+                            chart: {
+                            type: 'donut',                    
+                          },
+                          legend: "false",
+                          
+                        }
+                  
+                          var chart = new ApexCharts(document.querySelector("#chart"), options);
+                          chart.render();
+                        
                     </script>
 
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
