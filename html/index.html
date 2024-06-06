@@ -19,11 +19,17 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
-            <div class="container-fluid p-2 " style="background-color: #141414;">
-                <a class="navbar-brand mx-auto " href="#" style="color: white;">BioTV</a>
-                <button class="btn btn-secondary me-2" type="submit">Login</button>
-                <button class="btn btn-success" type="submit">Assine já</button>
-            </div>
+            <div class="container-fluid p-2" style="background-color: #141414;">
+                <div class="d-flex justify-content-end" style="width: 250px;">
+
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a class="navbar-brand text-center" href="#" style="color: white;">BioTV</a>
+                </div>
+                <div class="d-flex justify-content-end" style="width: 250px;">
+                    <button class="btn btn-secondary me-2" type="submit">Login</button>
+                    <button class="btn btn-success" type="submit">Assine já</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -48,12 +54,13 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide-curso">
                     <div class="video-card w-100 rounded shadow position-relative"
-                        style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        style="background: url(/img/thumb.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <div class="video-title position-absolute text-white p-2 p-xl-2 ">
-                            <p class="">Curso</p>
+                            <p class="mb-0">Curso de programação</p>
+                            <p>virtualização</p>
                         </div>
                         <div class="hover text-white">
-                            <a href="#" class="nm-open" data-bs-toggle="" data-bs-target="">
+                            <a style="text-decoration: none; color: white" href="#" class="nm-open" data-bs-toggle="" data-bs-target="">
                                 <i class="fas fa-play small"></i>
                             </a>
                         </div>
@@ -61,7 +68,7 @@
                 </div>
                 <div class="swiper-slide slide-curso">
                     <div class="video-card w-100 rounded shadow position-relative"
-                        style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        style="background: url(/img/Alimentos/AuditorLiderIMG1.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <div class="video-title position-absolute text-white p-2 p-xl-2">
                             <p>Curso</p>
                         </div>
@@ -430,30 +437,15 @@
         </footer>
 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Modal body content goes here.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
+
+
+        <!-- Modal -->
         <div id="nm-wrapper">
             <div class="nm-modal">
                 <div class="nm-modal-header">
-                    <video id="myVideo" loop
-                        poster="https://image.tmdb.org/t/p/original/fOy6SL5Zs2PFcNXwqEPIDPrLB1q.jpg">
-                        <source
-                            src="https://upload.wikimedia.org/wikipedia/commons/transcoded/1/10/Tears_of_Steel_in_4k_-_Official_Blender_Foundation_release.webm/Tears_of_Steel_in_4k_-_Official_Blender_Foundation_release.webm.2160p.vp9.webm" />
+                    <video id="myVideo" autoplay loop poster="/img/thumb.jpg">
+                        <source src="/img/Kubernetes __ Dicionário do Programador.mp4" />
                     </video>
 
                     <button type="button" class="nm-close">
@@ -476,7 +468,7 @@
                                             d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z"
                                             fill="currentColor"></path>
                                     </svg>
-                                    Play
+                                    <a href="/html/fullScreen.html" style="text-decoration: none; color:black">Play</a>
                                 </button>
 
                                 <button type="button" class="nm-add">
@@ -508,59 +500,139 @@
                 </div>
                 <div class="nm-modal-content w-100 d-flex-row">
                     <div class="d-flex p-5">
-                        <div class="col">
-                            <h1>Curso de Curso</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officiis facere corporis minima in libero saepe dolores quod id perspiciatis. Nihil, ducimus repudiandae. Excepturi laudantium, enim delectus iure quia exercitationem!</p>
+                        <div class="col ">
+                            <div class="d-flex">
+                                <h1 class="">Kubernetes</h1>
+                                <img class="ms-2" src="/img/kuber.png" alt="" style="height: 50px;">
+                            </div>
+                            <p class="" style="text-align: justify;">Descubra o Kubernetes: a ferramenta que mudou a
+                                forma como implantamos e dimensionamos aplicativos na nuvem! Em nossa série exclusiva,
+                                mergulharemos nos conceitos essenciais e nos benefícios do Kubernetes, explorando o
+                                fascinante mundo dos contêineres e revelando todo o seu potencial. Prepare-se para
+                                dominar a arte da orquestração de contêineres e revolucionar sua abordagem ao
+                                desenvolver e executar aplicativos na nuvem. Junte-se a nós e transforme sua jornada de
+                                aprendizado em uma experiência verdadeiramente envolvente
+                            </p>
                         </div>
-                        <div class="col text-center">
+                        <div class="col-4 ms-5">
                             <h1>Professores</h1>
-                            <p>Nome do joão das neves</p>
+                            <p class="mb-1">-Nome do joão das neves</p>
+                            <p>-Nome do joão das neves</p>
+                            <p>Duração: 23 minutos</p>
                         </div>
                     </div>
                     <h1 class="text-center">Progresso</h1>
                     <div class="p-5 pt-0">
                         <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                     <h1 class="text-center">Aulas</h1>
                     <div class="swiper mySwiperModal">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
+                            <div class="swiper-slide slide-curso">
+                                <div class="video-card w-100 shadow position-relative"
+                                    style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                                    <div class="video-title position-absolute text-white p-2 p-xl-2">
+                                        <p>Introdução</p>
+                                    </div>
+                                    <div class="hover text-white">
+                                        <i class="fas fa-play small"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-curso">
+                                <div class="video-card w-100 shadow position-relative"
+                                    style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                                    <div class="video-title position-absolute text-white p-2 p-xl-2">
+                                        <p>Aula 01</p>
+                                    </div>
+                                    <div class="hover text-white">
+                                        <i class="fas fa-lock small"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-curso">
+                                <div class="video-card w-100 shadow position-relative"
+                                    style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                                    <div class="video-title position-absolute text-white p-2 p-xl-2">
+                                        <p>Aula 02</p>
+                                    </div>
+                                    <div class="hover text-white">
+                                        <i class="fas fa-lock small"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-curso">
+                                <div class="video-card w-100 shadow position-relative"
+                                    style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                                    <div class="video-title position-absolute text-white p-2 p-xl-2">
+                                        <p>Aula 03</p>
+                                    </div>
+                                    <div class="hover text-white">
+                                        <i class="fas fa-lock small"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-curso">
+                                <div class="video-card w-100 shadow position-relative"
+                                    style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                                    <div class="video-title position-absolute text-white p-2 p-xl-2">
+                                        <p>Aula 04</p>
+                                    </div>
+                                    <div class="hover text-white">
+                                        <i class="fas fa-lock small"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
-                    <p class="text-center">Comentarios(192)</p>
+                    <div class="accordion" id="accordionExample" >
+                        <div class="accordion-item" style="background-color: #14141400; border:0px">
+                          <h2 class=" accordion-header d-flex">
+                            <button  class=" btn mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h3 class="" style="text-decoration: none; color:white">Comentarios(192)</h3>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              
+                            </div>
+                          </div>
+                        </div>
+                    
+
                     <h1 class="text-center">Quiz</h1>
                     <div class="swiper mySwiperModal">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
-                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png"
-                                    alt=""></div>
+                            <div class="swiper-slide slide-curso">
+                                <div class="video-card w-100 shadow position-relative"
+                                    style="background: url(https://placehold.co/315x200/png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                                    <div class="video-title position-absolute text-white p-2 p-xl-2">
+                                        <p>Quiz 1</p>
+                                    </div>
+                                    <div class="hover text-white">
+                                        <i class="fas fa-gamepad small"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png" alt="">
+                            </div>
+                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png" alt="">
+                            </div>
+                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png" alt="">
+                            </div>
+                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png" alt="">
+                            </div>
+                            <div class="swiper-slide slide-curso "><img src="https://placehold.co/315x200/png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-                    <div class="nm-modal-body">
-                       
+                <div class="nm-modal-body">
+
                 </div>
             </div>
         </div>

@@ -1,0 +1,93 @@
+
+
+.boxForum {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    width: 1000px;
+    max-width: 45%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.user img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content #post-title{
+    width: 97%;
+    height: 1vh;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.content #post-content{
+    width: 97%;
+    height: 4vh;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.content #user-name{
+    width: 97%;
+    height: 1vh;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .post {
+        padding: 10px;
+    }
+    .user img {
+        width: 50px;
+        height: 50px;
+    }
+    .content #post-content {
+        font-size: 2px;
+    }
+}
+
+
+
+.contentText{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.contentText>p{
+    font-size: 16px;
+    padding: 2%;
+    margin: 0;
+}
