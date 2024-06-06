@@ -10,9 +10,9 @@
 }
 
 .post {
-    width: 1000px;
-    max-width: 45%;
-    background-color: #ffffff;
+    
+    width: 80%;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -27,8 +27,8 @@
 
 
 .user img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -38,9 +38,10 @@
     height: 1vh;
     resize: none;
     padding: 10px;
-    font-size: 16px;
+    font-size: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
 }
 
 .content #post-content{
@@ -48,7 +49,7 @@
     height: 4vh;
     resize: none;
     padding: 10px;
-    font-size: 16px;
+    font-size: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -58,7 +59,7 @@
     height: 1vh;
     resize: none;
     padding: 10px;
-    font-size: 16px;
+    font-size: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -81,7 +82,6 @@
 .contentText{
     width: 100%;
     height: 80px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     word-wrap: break-word;
 }
@@ -90,4 +90,5 @@
     font-size: 16px;
     padding: 2%;
     margin: 0;
+    color: #ffffff;
 }
