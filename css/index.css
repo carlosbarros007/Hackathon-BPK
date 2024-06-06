@@ -231,11 +231,13 @@ figure {
 
 .card-1 {
   top: 0;
+  border-radius: 20px;
   right: 180px;
 }
 
 .card-2 {
   top: 210px; /* 200px height - 15px overlap */
+  border-radius: 20px;
   right: 0;
 }
 
